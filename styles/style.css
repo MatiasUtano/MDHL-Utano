@@ -5,11 +5,6 @@
     font-family: 'Itim', cursive;
 }
 
-body{
-    background: rgb(47,47,47);
-    background: linear-gradient(180deg, rgba(47,47,47,1) 0%, rgba(150,148,143,1) 100%, rgba(0,212,255,1) 100%);
-}
-
 .container-nav{
     display: flex;
     justify-content: space-evenly;
@@ -177,7 +172,8 @@ h3{
 #bodyinfo{
     background-image: url(../assets/hockey_2.jpg);
     background-repeat: no-repeat;
-    backdrop-filter: blur(2px) contrast(1.02) ;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px) contrast(1.02);
 }
 
 #bodyrules{
@@ -235,6 +231,19 @@ table, th, td{
     padding-left: 40px;
 }
 
+.maps-flex{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.map{
+    margin: 10px;
+}
+
 .container-head-rules{
     text-align: center;
 }
@@ -277,9 +286,53 @@ table, th, td{
     color: white;
 }
 
+body{
+    background-color:blanchedalmond;
+}
+
+.main-form{
+    display: flex;
+    justify-content:center;
+}
+
+.form-flex{
+    width:800px;
+    padding: 100px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
 .footer-flex{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 80px;
     font-size: 20px;
+}
+
+.form-flex fieldset{
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.form-flex fieldset label{
+    padding: 10px;
+}
+
+.form-flex fieldset input{
+    padding: 10px;
+}
+
+.form-flex button{
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top:75px;
+}
+
+.form-flex h2{
+    margin-top: 15px;
+    text-align: center;
 }
